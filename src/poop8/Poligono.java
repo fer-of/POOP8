@@ -6,49 +6,40 @@ package poop8;
 
 /**
  * Esta clase representa un polígono genérico.
- * Un polígono es una figura geométrica plana cerrada formada por una secuencia finita de segmentos de recta llamados lados.
- * Esta clase proporciona métodos para calcular el área y el perímetro del polígono.
+ * Un polígono es una figura geométrica plana cerrada formada por una secuencia finita de segmentos de recta llamados lados
+ * Esta clase es abstracta y proporciona métodos abstractos para calcular el área y el perímetro del polígono
  * 
  * @author Fer Ordoñez
  * @version 06/04/2024
  */
 
-public class Poligono {
-    
+public abstract class Poligono {
+
     /**
-     * Constructor vacío de la clase Poligono.
+     * Constructor vacío de la clase Poligono
      */
     public Poligono() {
     }
 
     /**
-     * Calcula el área del polígono.
-     *
-     * @return El área del polígono.
+     * Calcula el área del polígono
+     * @return El área del polígono
      */
-    public float area(){
-        return 0;   
-    }
+    public abstract float area();
+    
+    /**
+     * Calcula el perímetro del polígono
+     * @return El perímetro del polígono
+     */
+    public abstract float perimetro();
 
     /**
-     * Calcula el perímetro del polígono.
-     *
-     * @return El perímetro del polígono.
-     */
-    public float perimetro(){
-        return 0; 
-    }
-
-    /**
-     * Retorna una representación en cadena del objeto Poligono.
-     *
-     * @return Una cadena que representa el objeto Poligono.
+     * Retorna una representación en cadena del objeto Poligono
+     * @return Una cadena que representa el objeto Poligono
      */
     @Override
     public String toString() {
         return "Poligono{" + '}';
-    }  
+    }
 }
-
-
 
